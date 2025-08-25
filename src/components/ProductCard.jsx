@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function ProductCard() {
   const menu_product = [
@@ -61,11 +62,13 @@ function ProductCard() {
       <h1 className="text-2xl font-bold mb-6">🔥 T-Shirt</h1>
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {menu_product.map((data) => (
-          <div 
+        {menu_product.map((data,index) => (
+           <Link to="/category">
+            <div 
             key={data.id} 
             className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-center items-center"
           >
+           
             <img 
               src={data.img} 
               alt={data.p_name} 
@@ -74,6 +77,8 @@ function ProductCard() {
             <h2 className="font-semibold mt-2">{data.p_name}</h2>
             <h3 className="text-green-600 font-bold">{data.price}</h3>
           </div>
+           </Link>
+         
         ))}
       </div>
     </div>
@@ -85,7 +90,8 @@ function ProductCard() {
       
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {otherProducts.map((data) => (
-          <div 
+          <Link to="/category">
+           <div 
             key={data.id} 
             className="bg-white p-4 rounded-xl shadow hover:shadow-lg transition flex flex-col justify-center items-center"
           >
@@ -97,6 +103,8 @@ function ProductCard() {
             <h2 className="font-semibold mt-2">{data.p_name}</h2>
             <h3 className="text-green-600 font-bold">{data.price}</h3>
           </div>
+          </Link>
+         
         ))}
       </div>
     </div>

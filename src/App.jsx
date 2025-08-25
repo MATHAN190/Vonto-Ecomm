@@ -7,6 +7,7 @@ import ProductDetails from './pages/productDetails'
 import Order from './pages/Order'
 import SuccessOrder from './pages/SuccessOrder';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 function App() {
 
   return (
@@ -20,7 +21,7 @@ function App() {
               <Route path='/order' element={<Order/>}/>
               <Route path='/success' element={<SuccessOrder/>}/>
             </Routes>
-       
+             <Footer/>
        </BrowserRouter>
     </>
   )

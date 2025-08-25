@@ -2,14 +2,16 @@ import React from 'react'
 import NavBar from '../components/NavBar'
 import ProductCard from '../components/ProductCard'
 import BannerSlider from '../components/Dynamic_img'
-import Category from '../components/Category'
+import Home_Category from '../components/Home_Category'
+import Footer from '../components/Footer'
 
 function Home() {
   return (
     <div>
       <BannerSlider/>
       <ProductCard/>
-      <Category/>
+      <Home_Category/>
+     
     </div>
    
   )

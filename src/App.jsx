@@ -8,6 +8,7 @@ import Order from './pages/Order'
 import SuccessOrder from './pages/SuccessOrder';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import Product_list from './pages/Product_list';
 function App() {
 
   return (
@@ -17,7 +18,9 @@ function App() {
             <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='/category' element={<Category/>}/>
-               <Route path='/productdetails' element={<ProductDetails/>}/>
+              <Route path='/category/:name' element={<Product_list/>}/>
+              <Route path="/product/:id" element={<ProductDetails />} />
+
               <Route path='/order' element={<Order/>}/>
               <Route path='/success' element={<SuccessOrder/>}/>
             </Routes>

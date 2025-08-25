@@ -1,0 +1,88 @@
+const allProducts = {
+  mens: [
+    { id: 1, name: "Men's Polo T-Shirt", price: "₹999", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/o/k/c/m-rafel-shirt-lyphy-original-imahcc3xmj8bvjzc.jpeg?q=70" },
+    { id: 2, name: "Men's Jeans", price: "₹1,499", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/jean/c/c/8/36-pf-baggy-105-fude-pride-original-imah4fu77dnfcghh.jpeg?q=70" },
+    { id: 3, name: "Men's Jacket", price: "₹2,999", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/f/o/b/xl-1-no-leather-fauxi-roxfid-original-imahek6q3qvncfay.jpeg?q=70" },
+    { id: 4, name: "Men's Formal Shirt", price: "₹1,199", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/y/c/d/4xl-met-veb-formal-coralpink-s-jadouncreation-original-imah5chkcnzvmwpq.jpeg?q=70" },
+    { id: 5, name: "Men's Kurta", price: "₹899", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-kurta/f/q/g/xl-mirror-kurta-romj-original-imahew8zju9guc4k.jpeg?q=70" },
+  ],
+  womens: [
+    { id: 11, name: "Women's Saree", price: "₹1,999", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/sari/y/w/u/free-gadwal-fashion-club-collection-unstitched-original-imagydunza3jwxdf.jpeg?q=70" },
+    { id: 12, name: "Women's Kurti", price: "₹1,299", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/h/e/a/m-gul263krtkashish-sa-rasa-original-imahf2kgjgxqbrag.jpeg?q=70" },
+    { id: 13, name: "Women's Dress", price: "₹2,499", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/dress/g/u/m/l-a1-zwerlon-original-imah726uqh4fg2ps.jpeg?q=70" },
+    { id: 14, name: "Women's Jeans", price: "₹1,599", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-jean/9/r/3/28-shopsy-wd-ice-15z-nucouths-original-imah7x4dp8mge5fm.jpeg?q=70" },
+    { id: 15, name: "Women's Top", price: "₹899", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/top/0/w/9/xl-pali-wal-01-paliwalarts-original-imagx8mgs6kckkxm.jpeg?q=70" },
+  ],
+  mobiles: [
+    { id: 21, name: "iPhone 14", price: "₹70,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/o/b/-original-imaghx9qkugtbfrn.jpeg?q=70" },
+    { id: 22, name: "Samsung S23", price: "₹60,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/i/5/1/-original-imagzm8pvabtmeys.jpeg?q=70" },
+    { id: 23, name: "OnePlus 11", price: "₹55,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/y/w/l/11r-5g-5011102527-oneplus-original-imagn3bq8t4ja5rx.jpeg?q=70" },
+    { id: 24, name: "Realme X7", price: "₹25,000", img: "https://rukminim2.flixcart.com/image/312/312/kkh6zrk0/mobile/s/n/p/x7-rmx3092-realme-original-imafztjzggzsnks2.jpeg?q=70" },
+    { id: 25, name: "Redmi Note 12", price: "₹18,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/m/r/i/note-12-5g-mzb0ei8in-redmi-original-imagpgr9gpmjjnwa.jpeg?q=70" },
+  ],
+  laptops: [
+    { id: 31, name: "MacBook Pro", price: "₹1,20,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/l/q/t/-original-imaguw3hwp55jj7b.jpeg?q=70" },
+    { id: 32, name: "Dell XPS", price: "₹95,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/r/g/l/-original-imahcn9hgac9hytg.jpeg?q=70" },
+    { id: 33, name: "HP Pavilion", price: "₹60,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/m/d/y/-original-imahcd9ptdzeq85z.jpeg?q=70" },
+    { id: 34, name: "Asus ROG", price: "₹90,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/v/z/m/-original-imahcymxkux5q3af.jpeg?q=70" },
+    { id: 35, name: "Lenovo ThinkPad", price: "₹80,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/e/o/n/thinkpad-e14-business-laptop-lenovo-original-imah7qfvgmgmyzfu.jpeg?q=70" },
+  ],
+  tv: [
+    { id: 41, name: "Samsung Smart TV", price: "₹55,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/television/k/h/w/-original-imah3868qdatnqg8.jpeg?q=70" },
+    { id: 42, name: "Sony Bravia 55", price: "₹70,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/television/i/8/0/-original-imah2dzwa44rbqds.jpeg?q=70" },
+    { id: 43, name: "LG OLED TV", price: "₹85,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/television/e/c/d/-original-imahf43fvgvxce6v.jpeg?q=70" },
+    { id: 44, name: "Mi TV 5X", price: "₹35,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/television/f/c/n/-original-imahdptcnwuvdny9.jpeg?q=70" },
+    { id: 45, name: "OnePlus TV", price: "₹45,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/television/i/8/0/-original-imah2dzwa44rbqds.jpeg?q=70" },
+  ],
+  watch: [
+    { id: 51, name: "Apple Watch", price: "₹35,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/j/y/8/-original-imah4jmyehd2ev46.jpeg?q=70" },
+    { id: 52, name: "Samsung Galaxy Watch", price: "₹28,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/g/q/2/39-i8-black-050-android-ios-gamesir-yes-original-imah9w25yfkbsg23.jpeg?q=70" },
+    { id: 53, name: "Fossil Gen 6", price: "₹20,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/e/h/b/1-43-android-ios-90172ap01-titan-yes-original-imagqggzvzabrhmv.jpeg?q=70" },
+    { id: 54, name: "Noise Smartwatch", price: "₹2,500", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/s/i/u/-original-imah76jt64ffmwg4.jpeg?q=70" },
+    { id: 55, name: "Boat Storm", price: "₹2,200", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/smartwatch/t/v/t/-original-imahdg3nhchdzhpn.jpeg?q=70" },
+  ],
+  shoes: [
+    { id: 61, name: "Nike Air Max", price: "₹7,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/x/u/u/2-5-dm7590-100nike-5-nike-white-black-hemp-team-orange-original-imah4jv7zjsqdge2.jpeg?q=70" },
+    { id: 62, name: "Adidas Ultraboost", price: "₹9,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/d/g/3/-original-imah4sz8wzthggck.jpeg?q=70" },
+    { id: 63, name: "Puma Sneakers", price: "₹5,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/y/k/4/-original-imahfpz5d4rxhxgf.jpeg?q=70" },
+    { id: 64, name: "Reebok Classic", price: "₹4,500", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/h/v/n/-original-imahan4bhpugh8cv.jpeg?q=70" },
+    { id: 65, name: "Woodland Boots", price: "₹3,800", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/l/z/d/9-i-c102-brown-9-kastava-brown-original-imahdq4vtpwdtxmz.jpeg?q=70" },
+  ],
+  furniture: [
+    { id: 71, name: "Wooden Sofa", price: "₹15,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/sofa-set/t/f/q/0-71-72-brown-polycotton-3-1-1-0-178-78-74-30-5-16-25-0-ph0046-original-imahcz7k3w8wqh4j.jpeg?q=70" },
+    { id: 72, name: "Dining Table Set", price: "₹20,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/dining-set/f/t/j/114-3-cream-57-15-0-rosewood-sheesham-25-rectangle-43-18-86-36-original-imahfdmhhx3uwbtj.jpeg?q=70" },
+    { id: 73, name: "Office Chair", price: "₹7,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/office-study-chair/i/p/r/-original-imahazwf4fx7ah53.jpeg?q=70" },
+    { id: 74, name: "King Size Bed", price: "₹25,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/bed/9/g/d/queen-216-1-na-no-156-particle-board-yes-109-56101515sd00685-original-imah8ew6tkguhwvv.jpeg?q=70" },
+    { id: 75, name: "Bookshelf", price: "₹6,500", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/collapsible-wardrobe/u/1/o/-original-imagtetcqema2mny.jpeg?q=70" },
+  ],
+  toys: [
+    { id: 81, name: "Lego Blocks", price: "₹2,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/block-construction/6/v/o/60-pcs-building-blocks-set-creative-educational-construction-toy-original-imahdmqm63hbeahb.jpeg?q=70" },
+    { id: 82, name: "Remote Car", price: "₹1,500", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/remote-control-toy/f/h/u/remote-control-toy-car-electric-chargeable-3d-lightning-black-1-original-imagz45fsehbh2fh.jpeg?q=70" },
+    { id: 83, name: "Barbie Doll", price: "₹1,200", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/doll-doll-house/n/r/z/-original-imagqshbbkhfsvza.jpeg?q=70" },
+    { id: 84, name: "Teddy Bear", price: "₹800", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/stuffed-toy/k/z/p/labubu-doll-original-soft-plush-toy-with-signature-mischievous-original-imahf9ukgajbjshm.jpeg?q=70" },
+    { id: 85, name: "Cricket Kit", price: "₹3,500", img: "https://rukminim2.flixcart.com/image/612/612/kdt50nk0/toy-sport/a/v/f/cs1-cricket-bat-easy-lite-original-imafumapemkdqcmp.jpeg?q=70" },
+  ],
+  cameras: [
+    { id: 91, name: "Canon DSLR", price: "₹50,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/dslr-camera/i/o/c/eos-r100-24-1-eos-r100-kit-canon-original-imagqeydhsxgacxp.jpeg?q=70" },
+    { id: 92, name: "Nikon DSLR", price: "₹55,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/dslr-camera/1/9/j/d7500-20-9-d7500-nikon-original-imah3ubrv5y2vynk.jpeg?q=70" },
+    { id: 93, name: "Sony Mirrorless", price: "₹65,000", img: "https://rukminim2.flixcart.com/image/312/312/k3q76a80/camera/7/9/u/sony-apsc-ilce-6600-b-in5-mirrorless-original-imafm6mtahhva36r.jpeg?q=70" },
+    { id: 94, name: "GoPro Hero 10", price: "₹35,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/dslr-camera/o/5/9/autofocus-16x-digital-zoom-rechargeable-camera-48-4k-ultra-hd-original-imahcy7gnjqpdqum.jpeg?q=70" },
+    { id: 95, name: "Fujifilm Instax", price: "₹7,000", img: "https://rukminim2.flixcart.com/image/312/312/xif0q/dslr-camera/u/q/3/autofocus-16x-digital-zoom-rechargeable-camera-48-dc306-4k-hd-original-imahdyhqyyaxgnmj.jpeg?q=70" },
+  ],
+  headphones: [
+    { id: 101, name: "Sony WH-1000XM4", price: "₹25,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/q/p/s/-original-imahfcgx3gahvr7d.jpeg?q=70" },
+    { id: 102, name: "Bose QC35 II", price: "₹28,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/x/k/f/muffs-m2-wireless-portronics-original-imagpef3fqyrdn24.jpeg?q=70" },
+    { id: 103, name: "Boat Rockerz 550", price: "₹2,000", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/4/j/w/-original-imah5hdzgdhnrybq.jpeg?q=70" },
+    { id: 104, name: "JBL Tune 500", price: "₹1,500", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/e/o/w/-original-imahdxvsyksqn6ez.jpeg?q=70" },
+    { id: 105, name: "OnePlus Bullets Z2", price: "₹2,200", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/headphone/2/l/x/nrd-bds-3-pro-oneplus-original-imahe6hbkc5jqzmv.jpeg?q=70" },
+  ],
+  books: [
+    { id: 111, name: "Rich Dad Poor Dad", price: "₹499", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/book/1/h/y/rich-dad-poor-dad-original-imahejamuuaqy8yn.jpeg?q=70" },
+    { id: 112, name: "Atomic Habits", price: "₹599", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/book/6/k/y/atomic-habits-the-psychology-of-money-original-imaheetrhgbwqrpw.jpeg?q=70" },
+    { id: 113, name: "Wings of Fire", price: "₹399", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/e/v/r/wings-of-fire-autobiography-of-abdul-kalam-paperback-a-p-j-abdul-original-imahayccnu3zpapb.jpeg?q=70" },
+    { id: 114, name: "The Alchemist", price: "₹350", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/book/g/v/g/the-alchemist-original-imahehc2hvag5xnk.jpeg?q=70" },
+    { id: 115, name: "Think and Grow Rich", price: "₹450", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/regionalbooks/z/f/l/think-and-grow-rich-english-edition-original-imah9kyzzdpgzhgh.jpeg?q=70" },
+  ],
+};
+
+export default allProducts;

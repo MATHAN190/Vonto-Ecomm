@@ -65,16 +65,7 @@ function ReviewSection() {
         ))}
       </div>
 
-      {/* Customer Comments */}
-      <div className="bg-white p-6 rounded-lg shadow">
-        <h2 className="text-xl font-bold mb-4">Customer Feedback</h2>
-        {comments.map((c, i) => (
-          <div key={i} className="border-b py-3">
-            <p className="font-semibold">{c.name}</p>
-            <p className="text-gray-600">{c.review}</p>
-          </div>
-        ))}
-      </div>
+      
     </div>
   );
 }

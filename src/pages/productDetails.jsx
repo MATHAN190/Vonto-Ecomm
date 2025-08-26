@@ -5,7 +5,7 @@ import Single_Details from "../components/Single_Details";
 import ReviewSection from "../components/Reviews";
 import { CartContext } from "../components/CartContext";
 
-function ProductDetails() {
+export default function ProductMain() {
   const { addToCart } = useContext(CartContext);
   const navigate = useNavigate();
   const { id } = useParams();
@@ -76,4 +76,4 @@ function ProductDetails() {
   );
 }
 
-export default ProductDetails;
+

@@ -1,4 +1,4 @@
-import React from "react";
+
 
 function ReviewSection() {
   const rating = 4.2;
@@ -9,12 +9,7 @@ function ReviewSection() {
     { name: "Comfort", value: 4.2 },
   ];
 
-  const comments = [
-    { name: "Arun", review: "Nice product 👌" },
-    { name: "Meena", review: "Super quality, worth the money!" },
-    { name: "Rahul", review: "Comfortable and stylish." },
-    { name: "Priya", review: "Good fitting, loved it ❤️" },
-  ];
+  
 
   return (
     <div className="p-6 bg-gray-100 mt-8 rounded-lg">

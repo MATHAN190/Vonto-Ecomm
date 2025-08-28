@@ -5,6 +5,12 @@ const allProducts = {
     { id: 3, name: "Men's Jacket", price: "₹2,999", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/jacket/f/o/b/xl-1-no-leather-fauxi-roxfid-original-imahek6q3qvncfay.jpeg?q=70" },
     { id: 4, name: "Men's Formal Shirt", price: "₹1,199", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/y/c/d/4xl-met-veb-formal-coralpink-s-jadouncreation-original-imah5chkcnzvmwpq.jpeg?q=70" },
     { id: 5, name: "Men's Kurta", price: "₹899", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-kurta/f/q/g/xl-mirror-kurta-romj-original-imahew8zju9guc4k.jpeg?q=70" },
+    { id:6 , name: "T-Shirt " , price:"₹899" , img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/s/d/u/m-urm034441p-urgear-original-imahesryn5szzrz6.jpeg?q=70"},
+        { id:7 , name: "Shirt " , price:"₹599" , img:"https://rukminim2.flixcart.com/image/612/612/xif0q/shirt/i/2/r/s-satin14-deemoon-original-imahckprq6td5kgm.jpeg?q=70"},
+            { id:8 , name: "Pant " , price:"₹699" , img:"https://rukminim2.flixcart.com/image/612/612/xif0q/cargo/x/2/k/xxl-joggers-fit-jhon-vegas-original-imahf8jhfqcsehy3.jpeg?q=70"},
+                { id:9 , name: "Fashion" , price:"₹399" , img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/g/u/6/m-82091475-try-this-original-imahd2hterrzs6fk.jpeg?q=70"},
+                    { id:10 , name: "T-Shirt " , price:"₹299" , img:"https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/f/6/y/l-64518810-try-this-original-imahcywfbnhcqrxg.jpeg?q=70"},
+    
   ],
   womens: [
     { id: 11, name: "Women's Saree", price: "₹1,999", img: "https://rukminim2.flixcart.com/image/612/612/xif0q/sari/y/w/u/free-gadwal-fashion-club-collection-unstitched-original-imagydunza3jwxdf.jpeg?q=70" },

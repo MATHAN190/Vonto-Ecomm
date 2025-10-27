@@ -44,8 +44,8 @@ function Footer() {
            <ul>
             <li><a href="" className=' text-white text-sm'>Vonto Internet pvt limited</a></li>
              <li><a href="" className=' text-white text-sm'> Madurai</a></li>
-              <li><a href="" className=' text-white text-sm'>Founder : Mathan Kumar K</a></li>
-               <li><a href="" className=' text-white text-sm'>no : 9791061190</a></li>
+              <li><a href="" className=' text-white text-sm'>Founder : Abitha Praisy M </a></li>
+               <li><a href="" className=' text-white text-sm'>no : 9025105743</a></li>
            </ul>
          
         </div>
@@ -53,7 +53,7 @@ function Footer() {
     </div>
         
         <div className='text-center p-5'>
-            <p className='text-gray-300 md:hidden'>Founder : Mathan Kumar k</p>
+            <p className='text-gray-300 md:hidden'>Founder : Abitha Praisy M</p>
             <div className=' p-2 flex py-2'>
                 <h3 className='text-gray-400 px-3'>Accepted Card :</h3>
                 <div className='flex gap-4'>

@@ -53,13 +53,13 @@ function Footer() {
     </div>
         
         <div className='text-center p-5'>
-            <p className='text-gray-300 md:hidden'>Founder : Abitha Praisy M</p>
+            <p className='text-gray-300 md:hidden'>Founder : MATHAN KUMAR K </p>
             <div className=' p-2 flex py-2'>
                 <h3 className='text-gray-400 px-3'>Accepted Card :</h3>
                 <div className='flex gap-4'>
                       {
                     cardimg.map((data,index)=>(
-                         <img src={data.img} alt="" className='w-7 h-7 ' />
+                     <img src={data.img} alt="" className='w-7 h-7 ' />
                     ))
                 }
                 </div>

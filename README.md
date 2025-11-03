@@ -26,5 +26,3 @@ Deployed live on **Netlify** 👉 [https://madhanvonto.netlify.app](https://madh
 | **Netlify** | Hosting and deployment platform |
 
 ---
-
-## 📂 Folder Structure
